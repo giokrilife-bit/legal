@@ -104,20 +104,34 @@ small{
     color:#6b7280;
 }
 
-/* 🔹 SOLO AGGIUNTA NUOVA (NON TOCCA IL RESTO) */
-.download-btn{
+/* 🔹 AGGIUNTA SOLO PER IL NUOVO BOTTONE */
+.inline-actions{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.secondary-button{
     display:inline-block;
-    margin-top:20px;
-    padding:14px 22px;
     background:#2563eb;
     color:white;
     text-decoration:none;
+    padding:10px 16px;
     border-radius:6px;
     font-weight:bold;
+    font-size:14px;
 }
 
-.download-btn:hover{
+.secondary-button:hover{
     background:#1d4ed8;
+}
+
+.examples{
+    font-size:14px;
+    color:#6b7280;
+    margin-top:10px;
 }
 
 </style>
@@ -157,9 +171,9 @@ Il servizio non sostituisce l'attività professionale dell'Avvocato...
 
 <div class="grid">
 
-<div class="card">⏱️ <b>Riduzione dei tempi di ricerca</b></div>
-<div class="card">📚 <b>Ordine delle informazioni</b></div>
-<div class="card">⚖️ <b>Focus strategico</b></div>
+<div class="card">⏱️ Riduzione tempi di ricerca</div>
+<div class="card">📚 Ordine informazioni</div>
+<div class="card">⚖️ Focus strategico</div>
 
 </div>
 
@@ -179,42 +193,26 @@ Il servizio non sostituisce l'attività professionale dell'Avvocato...
 
 <div class="section">
 
-<div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px;">
+<h2>🤝 Primo Dossier di Valutazione</h2>
+
+<div class="inline-actions">
 
   <h2 style="margin:0;">🤝 Primo Dossier di Valutazione</h2>
 
-  <a href="https://giokrilife-bit.github.io/dossier-giuridico/"
-     style="
-        display:inline-block;
-        background:#2563eb;
-        color:white;
-        text-decoration:none;
-        padding:10px 16px;
-        border-radius:6px;
-        font-weight:bold;
-        font-size:14px;
-     ">
+  <a class="secondary-button"
+     href="https://giokrilife-bit.github.io/dossier-giuridico/">
      📄 Vai ai Dossier
   </a>
 
 </div>
 
-<p>
-Possibilità di attivare un primo dossier su un caso reale.
-</p>
+<div class="examples">
+Esempi: dossier conoscitivo, dossier standard, dossier approfondito
+</div>
 
-<!-- 🔥 INTEGRAZIONE MINIMA (SOLO QUI) -->
 <a class="button"
 href="mailto:giokrilife@gmail.com?subject=Richiesta Informazioni - Dossier Giuridici&body=Buongiorno,%0D%0AVorrei informazioni sul servizio.%0D%0AGrazie.">
 📩 Richiedi Informazioni
-</a>
-
-<br>
-
-<a class="download-btn"
-href="documento.pdf"
-download>
-⬇ Scarica Dossier PDF
 </a>
 
 </div>
